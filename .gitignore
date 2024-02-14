@@ -190,6 +190,7 @@ ClientBin/
 *.dbmdl
 *.dbproj.schemaview
 *.jfm
+*.pfx
 *.publishsettings
 node_modules/
 orleans.codegen.cs
@@ -259,6 +260,6 @@ paket-files/
 __pycache__/
 *.pyc
 
-LibRetriX/
+TestRoms/
 
 **/Generated Files

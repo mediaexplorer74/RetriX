@@ -1,43 +1,77 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/dx4l9e29md9v4i8h/branch/master?svg=true)](https://ci.appveyor.com/project/Aftnet/retrix/branch/master)
+# RetriX v2.0.1.0 (v2.0-pre-pre-alpha; UWP edition) 
 
-# RetriX
+Planned as "RetriX Lite" project (1-2 cores... maybe, UWP+Android target, idk!). Draft. Not for production. My Retrix "code archive".... no more, no less.
+
+## About
 
 RetriX is an emulator front end for UWP, on all the hardware platforms it supports: it serves the same purpose as RetroArch but is built from the ground up to integrate as well as possible with Windows.
 It can run on desktop, tablet, phone and Xbox One (in dev mode). Holographic, Mixed Reality and Continuum on phone should work too but haven't beed tested.
 
-## Systems supported
+## Notice 
+*This is no longer maintained, purely uploaded and made public for those who are curious or wish to try fix any issues. Expect no (or minimal) future updates to this repo*. 
+Amd, this version of Retrix has known bug: VM don't want to stop / restart / recover after any attemptx to exit... Only mobile device switch off & on can help ... 
 
-ReriX supports any [LibRetriX](https://gitlab.com/aftnet/LibRetriX) conformant cores.
+## My photos (desktop build for test / debug deals)
 
-## Demo
+![](Images/shot01.png)
 
-[![Youtube link](https://img.youtube.com/vi/212kBK0IB1w/0.jpg)](https://youtu.be/212kBK0IB1w)
+![](Images/shot02.png)
 
-Click image to play video
+![](Images/shot03.png)
 
-Original demo video [here](https://youtu.be/1mzS54HhcEM)
+![](Images/shot04.png)
 
-## How to use
+![](Images/shot05.png)
 
-Check the [wiki](https://github.com/Aftnet/RetriX/wiki)
+![](Images/shot06.png)
 
-## Want to support RetriX?
+![](Images/shot07.png)
 
-Consider [donating via Patreon](https://www.patreon.com/aftnet).
+![](Images/shot08.png)
 
-## Installing
+![](Images/shot09.png)
 
-1. Check the [releases](https://github.com/Aftnet/RetriX/releases) section for the latest binary build
-2. Download and double click on the .appxbundle file, follow the instructions
 
-## Design goals
+## Tech. details
+- My fork based on very old Retrix commit. I made minimal code changes. In theory, W10M compatibility still present...
+- Target: x64 (but ARM included too, for future purposes)
+- Win. OS build: 19041 (or 18xxx) and above
+- Minimal Win. OS build: 14393
 
-- Full compliance with UWP sandboxing
-- Having cores render to SwapChain panels, allowing [XAML and DirectX interop](https://docs.microsoft.com/en-us/windows/uwp/gaming/directx-and-xaml-interop) and front ends to use native UWP controls for the UI
-- Support Windows 10 on all platforms (Desktop, Mobile, Xbox, VR) and architectures (x86, x64, ARM)
 
-## Project aim
+## Status
+- [+] App / Machine load
+- [+] NES emu
+- [?] Super NES emu
+- [-] Virtual gamepad
 
-- Creating a UWP emulation front end for a better experience (proper DPI scaling, native look and feel, fullscreen as borderless window, integration with Windows's modern audio pipeline)
-- Increasing safety by having emulation code run sandboxed
-- Create a meaningful use case for UWP sideloading on Windows, since Microsoft has decided to ban emulators from the store
+
+## To-Do
+- Add onscreen (virtual) keys control..
+- Add mouse support (?)
+- Fix reset/pause/stop deals
+- Fix settings menu
+- Find better way to improve overall emu speed
+
+
+## Credits
+
+* Original Retrix UWP developer:
+
+- [Alberto Fustinoni](https://github.com/albertofustinoni)
+
+* Retri UWP port re-development / improvements:
+
+- [Bashar Astifan](https://github.com/basharast)  (RetrixGold Project)
+- [Empyreal96](https://github.com/Empyreal96)     (x86Emulator Project) 
+
+
+## ..
+AS is. (For) my own small and poor RnD only. Just for fun :)
+
+## .
+- [M]edia[E]xplorer 2024
+
+
+
+
