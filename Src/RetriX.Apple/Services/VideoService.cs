@@ -3,6 +3,7 @@ using LibRetriX;
 using MetalKit;
 using RetriX.Shared.Services;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace RetriX.Apple.Services
@@ -60,32 +61,47 @@ namespace RetriX.Apple.Services
 
         public void RotationChanged(Rotations rotation)
         {
-            throw new NotImplementedException();
+            //
         }
 
         public void RenderVideoFrame(ReadOnlySpan<byte> data, uint width, uint height, uint pitch)
         {
-            throw new NotImplementedException();
+            //
         }
 
         public void SetFilter(TextureFilterTypes filterType)
         {
-            throw new NotImplementedException();
+            //
         }
 
         public void DrawableSizeWillChange(MTKView view, CGSize size)
         {
-            throw new NotImplementedException();
+            //
         }
 
         public void Draw(MTKView view)
         {
-            throw new NotImplementedException();
+            //
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            //
+        }
+
+        public void RenderVideoFrameRGB0555(IReadOnlyList<ushort> data, uint width, uint height, ulong pitch)
+        {
+            //
+        }
+
+        public void RenderVideoFrameRGB565(IReadOnlyList<ushort> data, uint width, uint height, ulong pitch)
+        {
+            //
+        }
+
+        public void RenderVideoFrameXRGB8888(IReadOnlyList<uint> data, uint width, uint height, ulong pitch)
+        {
+            //
         }
     }
 }

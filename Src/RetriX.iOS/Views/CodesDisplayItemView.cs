@@ -1,0 +1,23 @@
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Platforms.Ios.Binding.Views;
+using RetriX.Shared.ViewModels;
+using System;
+
+namespace RetriX.iOS
+{
+    public partial class CodesDisplayItemView : MvxTableViewCell
+    {
+        protected CodesDisplayItemView(IntPtr handle) : base(handle)
+        {
+            // Note: this .ctor should not contain any initialization logic.
+            this.DelayBind(() =>
+            {
+                var set = this.CreateBindingSet<CodesDisplayItemView, OTPDisplayViewModel>();
+                set.Bind(LabelDisplay).To(m => m.Label);
+                set.Bind(OTPDisplay).To(m => m.OTP);
+                set.Bind(IssuerDisplay).To(m => m.Issuer);
+                set.Apply();
+            });
+        }
+    }
+}
