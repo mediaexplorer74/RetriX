@@ -57,15 +57,17 @@ Amd, this version of Retrix has known bug: VM don't want to stop / restart / rec
 
 
 ## Credits
-* Original Retrix UWP developer:
+: : Original Retrix UWP developer:
 
 - [Alberto Fustinoni](https://github.com/albertofustinoni)
 
-* Retri UWP port re-development / improvements:
+: : Retrix UWP port re-development / improvements:
 
 - [Bashar Astifan](https://github.com/basharast)  (RetrixGold Project)
 - [Empyreal96](https://github.com/Empyreal96)     (x86Emulator Project) 
 
+:: Retrix site
+- https://www.retrix.me/
 
 ## ..
 AS is. (For) my own small and poor RnD only. Just for fun :)
